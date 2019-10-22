@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/txt_judulmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Ini nama tempatnya"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_alamatmap"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_judulmap"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="5dp"
+        android:text="Ini alamatnya contoh blabla blablabla bla blalaa" />
+
+    <TextView
+        android:id="@+id/jam_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_alamatmap"
+        android:layout_marginHorizontal="5dp"
+        android:text="Jam Operasional :" />
+
+    <TextView
+        android:id="@+id/jam_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_alamatmap"
+        android:layout_toRightOf="@id/jam_judul"
+        android:text="00.00 - 23.00" />
+
+</RelativeLayout>

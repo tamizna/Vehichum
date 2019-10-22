@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBiasa"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:theme="@style/TanpaActionBar"
+    tools:context=".DetailFragment">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+
+    <TextView
+        android:id="@+id/detail_judul"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Nama Tempatnya Bla bla bla"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_alamat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/detail_alamat" />
+
+            <TextView
+                android:id="@+id/detail_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/img_alamat"
+                android:text="Ini alamatnya bla bla bla bla bla bla lalal ajsjk jskjkje" />
+
+            <ImageView
+                android:id="@+id/img_telp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/img_alamat"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/detail_phone" />
+
+            <TextView
+                android:id="@+id/detail_telp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_alamat"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/img_telp"
+                android:text="021123456" />
+
+            <Button
+                android:id="@+id/detail_hubungi"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/detail_alamat"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/detail_telp"
+                android:background="@color/colorPrimary"
+                android:text="Hubungi" />
+
+            <ImageView
+                android:id="@+id/img_jam"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/img_telp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/detail_jam" />
+
+            <TextView
+                android:id="@+id/detail_jam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_telp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/img_jam"
+                android:text="07:00 - 22:00" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
